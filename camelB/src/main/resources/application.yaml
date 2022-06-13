@@ -1,0 +1,13 @@
+server:
+  port: 9090
+  
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+    packages:
+      trust-all: true
+      
+camel:
+  component:
+    kafka:
+      brokers: localhost:9092
